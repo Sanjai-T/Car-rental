@@ -9,7 +9,7 @@ const Newsletter = () => {
     transition={{ duration: 0.6, ease: 'easeOut' }}
     viewport={{ once: true, amount: 0.3 }}
 
-    className="flex flex-col items-center justify-center text-center space-y-2 max-md:px-4 my-10 mb-40">
+    className="flex flex-col items-center justify-center text-center space-y-2 max-md:px-4 my-10 mb-40 ">
 
             <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ const Newsletter = () => {
                     placeholder="Enter your email id"
                     required
                 />
-                <button type="submit" className="md:px-12 px-8 h-full text-white bg-primary hover:bg-primary-dull transition-all cursor-pointer rounded-md rounded-l-none">
+                <button type="submit" className="md:px-12 px-8 h-full text-white bg-[#A0C878] hover:bg-[#CAE8BD] transition-all cursor-pointer rounded-md rounded-l-none">
                     Subscribe
                 </button>
             </motion.form>

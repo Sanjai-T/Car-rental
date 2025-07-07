@@ -24,7 +24,7 @@ const Testimonial = () => {
     ];
 
   return (
-    <div className="py-28 px-6 md:px-16 lg:px-24 xl:px-44">
+    <div className="py-28 px-6 md:px-16 lg:px-24 xl:px-44 bg-[#ECFAE5]">
             
            <Title title="What Our Customers Say" subTitle="Discover why discerning travelers choose StayVenture for their luxury accommodations around the world."/>
 
@@ -45,11 +45,7 @@ const Testimonial = () => {
                                 <p className="text-gray-500">{testimonial.location}</p>
                             </div>
                         </div>
-                        <div className="flex items-center gap-1 mt-4">
-                            {Array(5).fill(0).map((_, index) => (
-                                <img key={index} src={assets.star_icon} alt="star-icon" />
-                            ))}
-                        </div>
+
                         <p className="text-gray-500 max-w-90 mt-4 font-light">"{testimonial.testimonial}"</p>
                     </motion.div>
                 ))}
