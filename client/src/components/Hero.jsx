@@ -37,7 +37,7 @@ const Hero = () => {
             <div className='flex flex-col items-start gap-2 '>
                 <select required value={pickupLocation}  onChange={(e)=>setPickupLocation(e.target.value)}>
                     <option value="" >Pickup Location</option>
-                    {cityList.map((city)=> <option key={city} className='text-white' value={city}>{city}</option>)}
+                    {cityList.map((city)=> <option key={city} className='text-black' value={city}>{city}</option>)}
                 </select>
                 <p className='px-1 text-sm '>{pickupLocation ? pickupLocation : 'Please select location'}</p>
             </div>
